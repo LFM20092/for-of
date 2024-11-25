@@ -1,0 +1,14 @@
+<script>
+    let listaDeNomes = ["Amanda", "Eduardo", "Fabio", "Evelin", "Cesar", "Jose", "Ivo", "Eva", "Otavio", "Inez", "Osmar", "Ulisses"];
+    let nomesComVogais = [];
+
+    for (let nome of listaDeNomes) {
+        if ("aeiouAEIOU".includes(nome[0])) {
+            nomesComVogais.push(nome)
+        }
+    }
+
+    nomesComVogais.sort();
+
+    document.write("Nomes que começam com vogal: " + nomesComVogais.join(", "));
+</script>

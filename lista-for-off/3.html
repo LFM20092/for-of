@@ -1,0 +1,16 @@
+<script>
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let pares = [];
+    let impares = [];
+
+    for (let i = 0; i < listaDeNumeros.length; i++) {
+        if (listaDeNumeros[i] % 2 === 0) {
+            pares.push(listaDeNumeros[i]);
+        } else {
+            impares.push(listaDeNumeros[i])
+        }
+    }
+
+    document.write("Pares: " + pares.join(", ") + "<br>");
+    document.write("Ímpares: " + impares.join(", "));
+</script>

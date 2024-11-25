@@ -1,0 +1,15 @@
+<script>
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let numerosPares = [];
+    let quantidadeTotal = listaDeItens.length;
+    
+    for (let i = 0; i < listaDeItens.length; i++) {
+        if (typeof listaDeItens[i] === "number" && listaDeItens[i] % 2 === 0) {
+            numerosPares.push(listaDeItens[i])
+        }
+    }
+
+    document.write("Números Pares: " + numerosPares.join(", ") + "<br>");
+    document.write("Quantidade de Números Pares: " + numerosPares.length + "<br>");
+    document.write("Quantidade Total de Elementos: " + quantidadeTotal);
+</script>

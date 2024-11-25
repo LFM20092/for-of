@@ -1,0 +1,12 @@
+<script>
+    let listaDeNomes = ["Joao Pedro", "Gabriel Jose", "Ulisses Joao", "Pedro Henrique", "Joao da Silva", "Joao Henrique", "Alisson Joao"];
+    let nomesComJoao = [];
+
+    for (let nome of listaDeNomes) {
+        if (nome.toLowerCase().includes("joao")) {
+            nomesComJoao.push(nome);
+        }
+    }
+
+    document.write("Nomes que contêm 'Joao': " + nomesComJoao.join(", "))
+</script>

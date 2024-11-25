@@ -1,0 +1,18 @@
+<script>
+    let listaDeNomes = ["Joao", "Maria", "Jose", "Amanda", "Beatriz", "Julio", "Olivia"];
+    let nomesMasculinos = [];
+    let nomesFemininos = [];
+
+    for (let nome of listaDeNomes) {
+        let genero = prompt("Digite o genero (M para Masculino e F para Feminino) para o nome: " + nome);
+
+        if (genero.toUpperCase() === "M") {
+            nomesMasculinos.push(nome);
+        } else if (genero.toUpperCase() === "F") {
+            nomesFemininos.push(nome)
+        }
+    }
+
+    document.write("Nomes Masculinos: " + nomesMasculinos.join(", ") + "<br>");
+    document.write("Nomes Femininos: " + nomesFemininos.join(", "));
+</script>
